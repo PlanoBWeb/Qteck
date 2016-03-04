@@ -1,0 +1,75 @@
+<article class="width-default bread-pesquisar">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <article class="breadcrumb pd-none">
+                <div class="conteudo pd-so-mob">
+                    <ul class="bloco-breadcrumb">
+                        <li class="linha-breadcrumb">        	
+                            <a href="{$URL}home/">Home</a>
+                        </li>
+                        <li class="linha-breadcrumb">
+                            »
+                        </li>
+                        {if $url[3]}                             
+                            {foreach key=paginaBread from=$permissao item=nomeBread}                            
+                                {if $paginaBread == $url[0]}                                 
+                                    <li class="linha-breadcrumb"><a href="{$URL}{$paginaBread}" class="link-bread">{$nomeBread}</a></li><li class="linha-breadcrumb"> » </li>
+                                    {foreach key=paginaBread1 from=$permissao item=nomeBread1}                                    
+                                        {if $paginaBread1 == $url[1]}                                         
+                                            <li class="linha-breadcrumb"><a href="{$URL}{$paginaBread}/{$paginaBread1}" class="link-bread">{$nomeBread1}</a></li>
+                                            <li class="linha-breadcrumb"> » </li>
+                                            {foreach key=paginaBread2 from=$permissao item=nomeBread2}                                            
+                                                {if $paginaBread2 == $url[2]}
+                                                    <li class="linha-breadcrumb"><a href="{$URL}{$paginaBread}/{$paginaBread1}/{$paginaBread2}" class="link-bread">{$nomeBread2}</a></li>
+                                                    <li class="linha-breadcrumb"> » </li>
+                                                    {foreach key=paginaBread3 from=$permissao item=nomeBread3}                                            
+                                                        {if $paginaBread3 == $url[3]}
+                                                            <li class="linha-breadcrumb linha-breadcrumb-ativo">{$nomeBread3}</li>
+                                                        {/if}
+                                                    {/foreach}  
+                                                {/if}
+                                            {/foreach}  
+                                        {/if}
+                                    {/foreach}                                              
+                                {/if}
+                            {/foreach}
+                        {elseif $url[2]}                             
+                            {foreach key=paginaBread from=$permissao item=nomeBread}                            
+                                {if $paginaBread == $url[0]}                                 
+                                    <li class="linha-breadcrumb"><a href="{$URL}{$paginaBread}" class="link-bread">{$nomeBread}</a></li><li class="linha-breadcrumb"> » </li>
+                                    {foreach key=paginaBread1 from=$permissao item=nomeBread1}                                    
+                                        {if $paginaBread1 == $url[1]}                                         
+                                            <li class="linha-breadcrumb"><a href="{$URL}{$paginaBread}/{$paginaBread1}" class="link-bread">{$nomeBread1}</a></li><li class="linha-breadcrumb"> » </li>
+                                            {foreach key=paginaBread2 from=$permissao item=nomeBread2}                                            
+                                                {if $paginaBread2 == $url[2]}
+                                                    <li class="linha-breadcrumb linha-breadcrumb-ativo">{$nomeBread2}</li>
+                                                {/if}
+                                            {/foreach}  
+                                        {/if}
+                                    {/foreach}                                              
+                                {/if}
+                            {/foreach}
+                        {elseif $url[1]}                             
+                            {foreach key=paginaBread from=$permissao item=nomeBread}                            
+                                {if $paginaBread == $url[0]}                                 
+                                    <li class="linha-breadcrumb"><a href="{$URL}{$paginaBread}" class="link-bread">{$nomeBread}</a></li><li class="linha-breadcrumb"> » </li>
+                                    {foreach key=paginaBread1 from=$permissao item=nomeBread1}                                    
+                                        {if $paginaBread1 == $url[1]}                                         
+                                            <li class="linha-breadcrumb linha-breadcrumb-ativo">{$nomeBread1}</li>
+                                        {/if}
+                                    {/foreach}                                              
+                                {/if}
+                            {/foreach}
+                        {elseif $url[0]}                             
+                            {foreach key=paginaBread from=$permissao item=nomeBread}                                    
+                                {if $paginaBread == $url[0]}                                         
+                                    <li class="linha-breadcrumb linha-breadcrumb-ativo">{$nomeBread}</li>
+                                {/if}
+                            {/foreach}                                              
+                        {/if}
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</article> 
