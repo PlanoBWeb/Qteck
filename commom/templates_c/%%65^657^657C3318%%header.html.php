@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.12, created on 2016-03-04 10:37:50
+<?php /* Smarty version 2.6.12, created on 2016-03-04 11:44:29
          compiled from ../inc/header.html */ ?>
 <div class="header-redes hidden-xs">
     <div class="width-default">
@@ -59,9 +59,44 @@ commom/img/logo.jpg" alt="Qteck" title="Qteck">
 home">Home</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
 quem-somos">Quem somos</a></li>
-                    <li class="line-menu-header"><a class="link-menu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
-servicos">Serviços</a></li>
-                    <li class="line-menu-header"><a class="link-menu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+                    <li class="line-menu-header dropdown">
+                        <a href="<?php echo $this->_tpl_vars['URL']; ?>
+servicos" class="link-menu-header" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços <span class="caret"></span></a>
+                        <div class="dropdown-menu dropdown-menu-style">
+                            <ul class="block-dropdown-menu">
+                                <li class="line-submenu-header open-dropdown-submenu">
+                                    <a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+#">Teste <img class="pull-right" src="<?php echo $this->_tpl_vars['URL']; ?>
+commom/img/seta-sub.png" alt=""></a>
+                                    <div class="dropdown-submenu dropdown-menu-style">
+                                        <ul class="block-dropdown-menu block-dropdown-submenu">
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+#">Teste Sub</a></li>
+                                        </ul>    
+                                    </div>
+                                </li>
+                                <li class="line-submenu-header open-dropdown-submenu">
+                                    <a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+#">Teste <img class="pull-right" src="<?php echo $this->_tpl_vars['URL']; ?>
+commom/img/seta-sub.png" alt=""></a>
+                                    <div class="dropdown-submenu dropdown-menu-style">
+                                        <ul class="block-dropdown-menu block-dropdown-submenu">
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+#">Teste Sub2</a></li>
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+#">Teste Sub2</a></li>
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+#">Teste Sub2</a></li>
+                                        </ul>    
+                                    </div>
+                                </li>
+                                <li class="line-submenu-header"><a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
+#">Teste <img class="pull-right" src="<?php echo $this->_tpl_vars['URL']; ?>
+commom/img/seta-sub.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="line-menu-header"><a class="link-submenu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
 treinamentos">Treinamentos</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
 downloads">Downloads</a></li>
@@ -71,14 +106,6 @@ links-uteis">Links Úteis</a></li>
 clientes">Clientes</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="<?php echo $this->_tpl_vars['URL']; ?>
 contato">Contato</a></li>
-                    <li class="dropdown line-menu-header">
-                        <a href="<?php echo $this->_tpl_vars['URL']; ?>
-#" class="dropdown-toggle link-menu-header" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo $this->_tpl_vars['URL']; ?>
-#">Action</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>

@@ -44,18 +44,37 @@
                 <ul class="nav navbar-nav">
                     <li class="line-menu-header"><a class="link-menu-header" href="{$URL}home">Home</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="{$URL}quem-somos">Quem somos</a></li>
-                    <li class="line-menu-header"><a class="link-menu-header" href="{$URL}servicos">Serviços</a></li>
-                    <li class="line-menu-header"><a class="link-menu-header" href="{$URL}treinamentos">Treinamentos</a></li>
+                    <li class="line-menu-header dropdown">
+                        <a href="{$URL}servicos" class="link-menu-header" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços <span class="caret"></span></a>
+                        <div class="dropdown-menu dropdown-menu-style">
+                            <ul class="block-dropdown-menu">
+                                <li class="line-submenu-header open-dropdown-submenu">
+                                    <a class="link-submenu-header" href="{$URL}#">Teste <img class="pull-right" src="{$URL}commom/img/seta-sub.png" alt=""></a>
+                                    <div class="dropdown-submenu dropdown-menu-style">
+                                        <ul class="block-dropdown-menu block-dropdown-submenu">
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="{$URL}#">Teste Sub</a></li>
+                                        </ul>    
+                                    </div>
+                                </li>
+                                <li class="line-submenu-header open-dropdown-submenu">
+                                    <a class="link-submenu-header" href="{$URL}#">Teste <img class="pull-right" src="{$URL}commom/img/seta-sub.png" alt=""></a>
+                                    <div class="dropdown-submenu dropdown-menu-style">
+                                        <ul class="block-dropdown-menu block-dropdown-submenu">
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="{$URL}#">Teste Sub2</a></li>
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="{$URL}#">Teste Sub2</a></li>
+                                            <li class="line-submenu-header"><a class="link-submenu-header" href="{$URL}#">Teste Sub2</a></li>
+                                        </ul>    
+                                    </div>
+                                </li>
+                                <li class="line-submenu-header"><a class="link-submenu-header" href="{$URL}#">Teste <img class="pull-right" src="{$URL}commom/img/seta-sub.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="line-menu-header"><a class="link-submenu-header" href="{$URL}treinamentos">Treinamentos</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="{$URL}downloads">Downloads</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="{$URL}links-uteis">Links Úteis</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="{$URL}clientes">Clientes</a></li>
                     <li class="line-menu-header"><a class="link-menu-header" href="{$URL}contato">Contato</a></li>
-                    <!-- <li class="dropdown line-menu-header">
-                        <a href="{$URL}#" class="dropdown-toggle link-menu-header" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{$URL}#">Action</a></li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
         </div>

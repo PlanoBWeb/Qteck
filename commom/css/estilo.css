@@ -153,6 +153,52 @@ a:hover{ text-decoration: none !important; }
     text-transform: uppercase;
     font-size:      1em;
 }
+.navbar-default .navbar-nav>.open>a
+{
+    background-color: transparent !important;
+}
+.dropdown-menu-style
+{
+    width:              230px;
+    margin-top:         5px !important;
+    padding:            7px !important;
+    background-color:   #efac1f !important;
+    border:             transparent !important;
+    -webkit-box-shadow: 7px 7px 21px -2px #999 !important;
+    -moz-box-shadow: 7px 7px 21px -2px #999 !important;
+    box-shadow: 7px 7px 21px -2px #999 !important;
+}
+.line-submenu-header
+{
+    padding:        5px 0px;
+    border-bottom:  1px solid #f7d68f;
+}
+.line-submenu-header:last-child
+{
+    border-bottom: transparent;
+}
+.link-submenu-header
+{ 
+    padding:        18px 15px 8px 5px !important; 
+    color:          #fff !important;
+    font-family:    'DINMediumAlternate';
+    text-transform: uppercase;
+    font-size:      1em;
+}
+.dropdown-submenu
+{
+    display:    none;
+    position:   absolute;
+    float:      left;
+    left:       223px;
+    top:        0px;
+    margin-top: 0px !important;
+}
+.open-dropdown-submenu:hover .dropdown-submenu
+{
+    display: block;
+}
+
 
 /**
     ========================  3 - Conteudo   ======================== 
@@ -684,6 +730,9 @@ footer
         margin:     auto;
         display:    block;
         position:   relative;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
     }
 }
 
